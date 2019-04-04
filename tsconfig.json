@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-telephone-input": [
+        "dist/ngx-telephone-input"
+      ],
+      "ngx-telephone-input/*": [
+        "dist/ngx-telephone-input/*"
+      ]
+    }
   }
 }
