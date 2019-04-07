@@ -1,0 +1,21 @@
+<div class="custom-dropdown-container" >
+   <span class = "custom-icon-container">
+        <span class = "custom-icon"> @ </span>
+   </span>
+      <input  type="text" 
+              class="custom-input-control" 
+              [ngModel]="selectedValue" 
+              (keyup)="onKeyDownEvent($event)"
+              (focus)="onFocusEvent()"
+              (blur)="onBlurEvent($event)" />
+
+   <span class="custom-data-container" *ngIf="showDropDown" tabindex="0" (blur)="onBlurEvent()">
+
+        <span *ngFor="let data of dataList; let i = index">
+          <span class="custom-data-item" (click)="selectValue(data[valueField])" 
+               [ngClass]="{highlight:isSelected(i)}"> 
+               {{data[valueField]}}
+           </span>
+        </span>
+   </span>
+</div>

@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-NgxTelephoneInput',
-  template: `
-    <p>
-      ngx-telephone-input works!
-    </p>
-  `,
-  styles: []
+  // tslint:disable-next-line:component-selector
+  selector: 'ngx-telephone-input',
+  templateUrl: './ngx-telephone-input.component.html',
+  styleUrls: ['./ngx-telephone-input.component.scss']
 })
 export class NgxTelephoneInputComponent implements OnInit {
 

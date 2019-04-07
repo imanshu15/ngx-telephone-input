@@ -1,0 +1,14 @@
+<div class="month-selector btn-group">
+    <button type="button" data-toggle="dropdown">
+      {{customText}}
+    </button>
+    <ul class="dropdown-menu scrollable-menu" role="menu">
+      <li>
+        <div class="item" (click)="valueClick('Select Category')">Select Category</div>
+      </li>
+      <hr class="style-hr">
+      <li>
+        <div class="item"  (click)="valueClick('General Inquiries')">General Inquiries</div>
+      </li>
+    </ul>
+  </div>
